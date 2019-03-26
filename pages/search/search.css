@@ -1,0 +1,42 @@
+#searchDiv {
+    width: 100%;
+    height: 135px;
+    text-align: center;
+}
+
+input {
+    outline: none;
+}
+
+#searchInput {
+    width: 50%;
+    height: 50px;
+    align-self: center;
+    border-width: 1px;
+    border-color: #222;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+#optionnav {
+    height: 40px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.optionItem {
+    height: 40px;
+    width: 60px;
+    margin-left: 10px;
+    background-color: white;
+    border-width: 1px;
+    border-color: lightgray;
+    border-radius: 10px;
+
+}
+
+
+iframe {
+    width: 100%;
+    height: 100%;
+}

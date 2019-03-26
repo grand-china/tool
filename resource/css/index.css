@@ -8,7 +8,7 @@
 .navBtn {
     width: 38px;
     height: 38px;
-    position: absolute;
+    position: relative;
     background-size: contain;
     border-radius: 50%;
 }
@@ -16,12 +16,13 @@
 #leftNavBtn {
     top: 20px;
     left: 50px;
-    background-image: url(../assets/bio.png)
+    background-image: url(../assets/bio.png);
+    z-index: 10;
 }
 
 /* 左右边栏 */
 .opcontianer {
-    width: 280px;
+    width: 165px;
     height: 100%;
     position: fixed;
     top: 0;
@@ -31,6 +32,7 @@
     z-index: 100;
     box-sizing: border-box;
     padding: 1rem;
+    z-index: 10;
 }
 
 .opcontianer ol {
@@ -49,24 +51,32 @@
 li {
     color:var(--licolor)
 }
+
 a {
     text-decoration: none;
     color: var(--licolor)
 }
 
-
 #leftContainer {
-    left: -280px;
+    left: -165px;
+}
+
+
+#content {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: fixed;
 }
 
 /* animate */
 @keyframes leftshow {
-    from {left: -280px;}
+    from {left: -165px;}
     to {left: 0px;}
 }
 @keyframes lefthide {
     from {left: 0px;}
-    to {left: -280px;}
+    to {left: -165px;}
 }
 .leftshow {
     animation: leftshow var(--showTime) ease-in-out 0s 1 normal forwards;
@@ -77,23 +87,5 @@ a {
 
 
 @media only screen and (max-width: 600px) {
-    
-    .navBtn {
-        display: none;
-    }
-
-    .opcontianer {
-        width: 100%;
-        height: fit-content;
-        position: relative;
-        top: 55px;
-        margin-top: 5px;
-        /* background-color: rgba(201, 179, 179, 1); */
-    }
-
-    #leftContainer,#rightContainer {
-        left: 0;
-        right: 0;
-    }
 
 }

@@ -148,5 +148,17 @@ var Tool = {
       });
     }
   },
+
+
+  // Safe
+
+  string: {
+    isEmpty: (str) => {
+      var co =  typeof str === "string"
+      var lo = str.length > 0
+      return !(co && lo)
+    }
+  }
+
 }
 
