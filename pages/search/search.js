@@ -33,7 +33,8 @@ var page = {
     setUpHeader: () => {
 
         var content =  `<form> 
-        <input id ="searchInput" type="text" maxlength=255>
+        <input id ="searchInput" type="text" maxlength=255
+        placeholder="试试手气吧">
         </input>`
 
         content += `<div id="optionnav">`

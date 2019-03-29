@@ -6,11 +6,12 @@
 
 input {
     outline: none;
+    padding: 5px;
 }
 
 #searchInput {
     width: 50%;
-    height: 50px;
+    height: 42px;
     align-self: center;
     border-width: 1px;
     border-color: #222;
@@ -32,7 +33,6 @@ input {
     border-width: 1px;
     border-color: lightgray;
     border-radius: 10px;
-
 }
 
 
